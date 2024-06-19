@@ -36,11 +36,11 @@ def display():
 
 def cmd_exec(command):
     if command == '1':
-        os.system('cmd /k "python TOOLS/reqs.py"' if os.name == 'nt' else 'python TOOLS/reqs.py')
+        os.system('cmd /k "python reqs.py"' if os.name == 'nt' else 'python reqs.py')
     elif command == '2':
-        os.system('cmd /k "python TOOLS/iptracker.py"' if os.name == 'nt' else 'python TOOLS/iptracker.py')
+        os.system('cmd /k "python iptracker.py"' if os.name == 'nt' else 'python iptracker.py')
     elif command == '3':
-        os.system('cmd /k "python TOOLS/phonenum.py"' if os.name == 'nt' else 'python TOOLS/phonenum.py')
+        os.system('cmd /k "python phonenum.py"' if os.name == 'nt' else 'python phonenum.py')
 
         display()
     else:
