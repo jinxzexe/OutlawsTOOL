@@ -32,7 +32,7 @@ Write.Print(f"""
               გამზადებულია სიყვარულით TemoOutlaws & Gravity - ისგან
                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~""", Colors.red_to_blue, interval=0.000)
 def display():
-    Write.Print(f"\n[1] - DOS / დ ო ს ი\n[2] - IP LOOKUP / ა ი პ ი ს   ძ ე ბ ნ ა\n[3] - PHONE LOOKUP / ტ ე ლ ე ფ ო ნ ი ს   ძ ე ბ ნ ა", Colors.blue_to_cyan, interval=0.000)
+    Write.Print(f"\n[1] - DOS / დ ო ს ი\n[2] - IP LOOKUP / ა ი პ ი ს   ძ ე ბ ნ ა\n[3] - PHONE LOOKUP / ტ ე ლ ე ფ ო ნ ი ს   ძ ე ბ ნ ა\n[4] HASHING / ჰაშინგი", Colors.blue_to_cyan, interval=0.000)
 
 def cmd_exec(command):
     if command == '1':
@@ -41,6 +41,8 @@ def cmd_exec(command):
         os.system('cmd /k "python iptracker.py"' if os.name == 'nt' else 'python iptracker.py')
     elif command == '3':
         os.system('cmd /k "python phonenum.py"' if os.name == 'nt' else 'python phonenum.py')
+    elif command == '4':
+        os.system('cmd /k "python hashing.py"' if os.name == 'nt' else 'python hashing.py')
 
         display()
     else:
