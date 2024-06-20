@@ -1,4 +1,6 @@
+import colorama
 from colorama import Fore, Style
+import pystyle
 from pystyle import Write, System, Colors, Colorate, Anime
 import threading
 import requests
