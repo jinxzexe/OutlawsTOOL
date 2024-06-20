@@ -19,6 +19,8 @@ Here're some of the project's best features:
 
 <p>1. git clone https://github.com/jinxzexe/OutlawsTOOL</p>
 
-<p>2. pip install -r requirements.txt</p>
+<p>2. cd OutlawsTOOL</p>
 
-<p>3. python Menu.py</p>
+<p>3. pip install -r requirements.txt</p>
+
+<p>4. python Menu.py</p>
