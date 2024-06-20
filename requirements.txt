@@ -1,1 +1,9 @@
-
+colorama
+pystyle
+os
+sys
+hashlib
+phonenumbers
+requests
+threading
+platform
