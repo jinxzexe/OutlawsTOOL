@@ -2,7 +2,10 @@ import hashlib
 import os
 import sys
 import platform
-
+import colorama
+from colorama import Fore, Style
+import pystyle
+from pystyle import Write, System, Colors, Colorate, Anime
 clear = "gravita sigmaa"
 os_name = platform.system()
 if os_name == "Linux":
@@ -10,14 +13,14 @@ if os_name == "Linux":
 else:
     clear = "cls"
 
-target = input("Input the string you want to hash / შეიყვანე სტრინგი რომელიც გინდა რომ დაჰაშო: ")
+target = input("Input the string you want to hash / შეიყვანე სტრინგი რომელიც გინდა რომ დაჰაშო: ", Colors.red_to_blue, interval=0.000)
 os.system(clear)
 
 
-print("[1] md5")
-print("[2] sha1")
-print("[3] sha256")
-algorithm = input("Choose your algorithm / აირჩიე დაჰაშვის ალგორითმი: ")
+Write.Print("[1] md5", Colors.red_to_blue, interval=0.000)
+Write.Print("[2] sha1", Colors.red_to_blue, interval=0.000)
+Write.Print("[3] sha256", Colors.red_to_blue, interval=0.000)
+algorithm = input("Choose your algorithm / აირჩიე დაჰაშვის ალგორითმი: ", Colors.red_to_blue, interval=0.000)
 
 
 def hashing(target, algorithm):
@@ -38,4 +41,4 @@ def hashing(target, algorithm):
     return hashed_object.hexdigest()
     
 
-print(f"Hashed string: {hashing(target, algorithm)} / დაჰაშული სტრინგი: {hashing(target, algorithm)}")
+Write.Print(f"Hashed string: {hashing(target, algorithm)} / დაჰაშული სტრინგი: {hashing(target, algorithm)}", Colors.red_to_blue, interval=0.000)
